@@ -310,4 +310,13 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
+  config.sign_up_success_url = '/users'
+  config.sign_up_success_message = 'ユーザー登録が完了しました'
+
+  config.signed_in_root = '/users'
+  config.flash[:notice] = 'Signed in successfully.'
+
+　config.sign_out_via = :delete
+  config.signed_out_message = :'Signed out successfully.'
+
 end
