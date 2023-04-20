@@ -23,7 +23,7 @@
             <a class="nav-link text-light" href="/">Home</a>
             <% if user_signed_in? %>
             <li class="nav-item">
-            <%= link_to 'Users', user_path(current_user.id),class: 'nav-link text-light'%>
+            <%= link_to 'Users', users_path,class: 'nav-link text-light'%>
             </li>
             <li class="nav-item">
             <%= link_to 'Books', books_path,class: 'nav-link text-light'%>
@@ -45,12 +45,11 @@
           　<% end %>
   </header>
   <main>
-   <div class="container">
     <p id="notice"></p>
     <%# <% flash.each do |key, value| %>
     <%#  <div class="alert alert-<%= key == 'notice' ? 'success' : 'danger' %><%#">
+    </div>
     <%#   <%= value %>
-      </div>
     <%#<% end %>
     <%= yield %>
     </main>
