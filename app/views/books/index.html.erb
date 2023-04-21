@@ -61,10 +61,10 @@
       <td><%= image_tag book.user.get_profile_image(80,80) %></td>
      </tr>
       <tr>
-       <th><%= book.title %></th>
+       <td><%= link_to "#{book.title}",book_path(book) %></td>
       </tr>
       <tr>
-       <th><%= book.body %></th>
+       <td><%= book.body %></td>
       </tr>
     </tbody>
   </table>
