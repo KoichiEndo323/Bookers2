@@ -14,6 +14,9 @@
   <%= f.text_field :title, autofocus: true, id:"inputTitle", placeholder:"タイトル"%><br>
   <label for="inputBody">Opinion</label><br>
   <%=f.text_area :body, autofocus: true, id:"inputBody", placeholder:"本文" %><br>
-  <%= f.submit "Update Book" %>
+  <%= f.submit "Update Book", class: 'btn btn-success' %>
 <% end %>
 
+<%= link_to "Show",book_path(@book) %>
+<a>|</a>
+<%= link_to "Back",books_path %>
