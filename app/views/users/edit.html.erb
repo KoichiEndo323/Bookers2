@@ -1,3 +1,6 @@
+<div class="container">
+ <div class="row">
+  <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0">
 <% if @user.errors.any? %>
   <%= @user.errors.count %> errors prohibited this obj from being saved
   <ul>
@@ -17,3 +20,6 @@
   <%=f.text_area :introduction, autofocus: true, id:"inputIntroduction", placeholder:"自己紹介文" %><br>
   <%= f.submit "Update User", class: 'btn btn-success' %>
 <% end %>
+</div>
+</div>
+</div>
